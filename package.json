@@ -1,0 +1,41 @@
+{
+    "name": "ts-dom-helper",
+    "version": "1.0.0",
+    "description": "A library of utilities for DOM operations",
+    "repository": "git@github.com:semivan/ts-dom-helper.git",
+    "author": "Ivan Semenikhin <semenihin.ivan@gmail.com>",
+    "license": "MIT",
+    "type": "module",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepare": "husky install"
+    },
+    "lint-staged": {
+        "**/*.{js,ts,tsx}": [
+            "eslint . --fix"
+        ]
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^18.4.3",
+        "@commitlint/config-conventional": "^18.4.3",
+        "@semivan/eslint-config-ts": "^1.0.6",
+        "@stylistic/eslint-plugin": "^1.5.1",
+        "@types/eslint": "^8",
+        "@types/node": "^20.10.5",
+        "@typescript-eslint/eslint-plugin": "^6.4.0",
+        "@typescript-eslint/parser": "^6.16.0",
+        "eslint": "^8.0.1",
+        "husky": "^8.0.3",
+        "lint-staged": "^15.2.0",
+        "typescript": "^5.3.3",
+        "vite": "^5.0.10",
+        "vite-plugin-dts": "^3.7.0",
+        "vite-plugin-externalize-deps": "^0.8.0"
+    },
+    "packageManager": "yarn@4.0.2"
+}
